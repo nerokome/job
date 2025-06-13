@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { RxExit } from "react-icons/rx";
 
 const FloorSelector = ({ tower, floors, onBack, onSelect }) => {
   const fadeInUp = {
@@ -10,8 +11,11 @@ const FloorSelector = ({ tower, floors, onBack, onSelect }) => {
     <motion.div initial="initial" animate="animate" exit="exit" className="mt-10">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Select Floor in {tower}</h2>
-        <motion.button onClick={onBack} className="text-sm text-blue-500 underline" whileHover={{ scale: 1.1 }}>
-          ← Back
+        <motion.button onClick={onBack} className="text-sm text-red-400 underline" whileHover={{ scale: 1.1 }}>
+          <button className='flex gap-2  bg-gray-300  border border-transparent rounded-lg py-2 px-5 shadow-sm shadow-gray-700/50'>
+             <RxExit size={20} color='red' />
+            <h1>back</h1>
+          </button>
         </motion.button>
       </div>
       <motion.div className="grid grid-cols-3 gap-4">

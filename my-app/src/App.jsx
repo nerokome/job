@@ -1,4 +1,3 @@
-
 import './App.css'
 import Tower from './components/Tower'
 
@@ -8,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='w-full'>
        <Tower/>
       </div>
       
