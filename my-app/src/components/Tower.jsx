@@ -8,12 +8,57 @@ import ApartmentList from './Apartmentlist';
 const Tower = () => {
   const towers = ['Tower A', 'Tower B', 'Tower C'];
   const floors = Array.from({ length: 15 }, (_, i) => `Floor ${15 - i}`);
-  const apartments = [
-    { id: 1, image: '/emily.png', area: '1200 sqft', type: '2BHK', rooms: '2 Bed, 1 Kitchen' },
-    { id: 2, image: '/envy.png', area: '1500 sqft', type: '3BHK', rooms: '3 Bed, 1 Kitchen' },
-    { id: 3, image: '/outside.png', area: '900 sqft', type: '1BHK', rooms: '1 Bed, 1 Kitchen' },
-    { id: 4, image: '/robert.png', area: '1100 sqft', type: '2BHK', rooms: '2 Bed, 1 Kitchen' },
-  ];
+ const apartments = [
+  {
+    id: 1,
+    image: "/public/emily.png",
+    area: "1200 sqft",
+    type: "2BHK",
+    rooms: "2 Bed, 1 Kitchen",
+    gallery: [
+      "/public/ten.png",
+      "/public/eleven.png",
+      "/public/twelve.png"
+    ],
+  },
+  {
+    id: 2,
+    image: "/public/envy.png",
+    area: "1500 sqft",
+    type: "3BHK",
+    rooms: "3 Bed, 1 Kitchen",
+    gallery: [
+      "/public/seven.png",
+      "/public/eight.png",
+      "/public/nine.png"
+    ],
+  },
+  {
+    id: 3,
+    image: "/public/outside.png",
+    area: "900 sqft",
+    type: "1BHK",
+    rooms: "1 Bed, 1 Kitchen",
+    gallery: [
+      "/public/four.png",
+      "/public/five.png",
+      "/public/six.png"
+    ],
+  },
+  {
+    id: 4,
+    image: "/public/robert.png",
+    area: "1100 sqft",
+    type: "2BHK",
+    rooms: "2 Bed, 1 Kitchen",
+    gallery: [
+      "/public/one.png",
+      "/public/two.png",
+      "/public/three.png"
+    ],
+  },
+];
+
 
   const [selectedTower, setTower] = useState(null);
   const [selectedFloor, setFloor] = useState(null);

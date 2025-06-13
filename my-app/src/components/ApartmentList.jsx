@@ -31,7 +31,7 @@ const ApartmentList = ({ floor, apartments, onBack, onSelect }) => {
             <motion.img
               src={apt.image}
               alt={apt.type}
-              className="w-full h-40 object-cover"
+              className="w-full h-80 object-cover"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
